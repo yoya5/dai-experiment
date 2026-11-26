@@ -1,0 +1,49 @@
+== 2026-11-20T04:43:28-05:00  перехват-прогон cit_off_pilot по 192.168.10.14, 30c, Kali MAC 08:00:27:ce:96:be
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+bettercap v2.41.5 (built for linux amd64 with go1.24.9) [type 'help' for a list of commands]
+
+[04:43:30] [sys.log] [inf] gateway monitor started ...
+[04:43:32] [sys.log] [inf] arp.spoof starting net.recon as a requirement for arp.spoof
+[04:43:32] [sys.log] [war] arp.spoof full duplex spoofing enabled, if the router has ARP spoofing mechanisms, the attack will fail.
+[04:43:32] [sys.log] [inf] arp.spoof arp spoofer started, probing 1 targets.
+[04:43:32] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:33] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:34] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:35] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:35] [endpoint.new] endpoint fe80::b0af:761e:b844:ae27 detected as 00:90:f5:f5:fb:5a (CLEVO CO.).
+[04:43:36] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:37] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:38] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:39] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:40] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:41] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:42] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:43] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:44] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:45] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:45] [endpoint.lost] endpoint fe80::b0af:761e:b844:ae27 00:90:f5:f5:fb:5a (CLEVO CO.) lost.
+[04:43:46] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:47] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:48] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:49] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:50] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:50] [endpoint.new] endpoint 192.168.10.13 detected as 30:c5:99:11:55:f0.
+[04:43:51] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:52] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:53] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:54] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:55] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:56] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:57] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:58] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:59] [sys.log] [war] arp.spoof could not find spoof targets
+[04:43:59] [endpoint.new] endpoint 192.168.10.14 detected as 00:90:f5:f5:fb:5a (CLEVO CO.).
+[04:44:00] [sys.log] [war] arp.spoof could not find spoof targets
+[04:44:01] [sys.log] [war] arp.spoof could not find spoof targets
+[04:44:02] [sys.log] [war] arp.spoof could not find spoof targets
+[04:44:02] [sys.log] [inf] arp.spoof waiting for ARP spoofer to stop ...
+[04:44:02] [sys.log] [inf] arp.spoof restoring ARP cache of 1 targets.
+[04:44:02] [endpoint.lost] endpoint 192.168.10.13 30:c5:99:11:55:f0 lost.
+3 packets captured
+3 packets received by filter
+0 packets dropped by kernel

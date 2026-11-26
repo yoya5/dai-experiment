@@ -1,0 +1,24 @@
+== 2026-11-20T06:38:47-05:00  перехват-прогон eltex_off_12 по 192.168.10.14, 30c, Kali MAC 08:00:27:ce:96:be
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+bettercap v2.41.5 (built for linux amd64 with go1.24.9) [type 'help' for a list of commands]
+
+[06:38:49] [sys.log] [inf] gateway monitor started ...
+[06:38:51] [endpoint.new] endpoint fe80::735b:2531:c01d:957 detected as 30:c5:99:11:55:f0.
+[06:38:51] [endpoint.new] endpoint fe80::e65a:d4ff:fe9a:4040 detected as e4:5a:d4:9a:40:40 (Eltex Enterprise Ltd.).
+[06:38:51] [endpoint.new] endpoint 192.168.10.14 detected as 00:90:f5:f5:fb:5a (CLEVO CO.).
+[06:38:51] [sys.log] [inf] net.probe probing 256 addresses on 192.168.10.0/24
+[06:38:51] [sys.log] [inf] zerogod service discovery started
+[06:38:51] [sys.log] [inf] ipv6 fe80::b0af:761e:b844:ae27 detected for 192.168.10.14 (00:90:f5:f5:fb:5a)
+[06:38:51] [zeroconf.service] service PC1._smb._tcp.local. detected for [] (PC1.local.):445 with 1 records
+[06:38:51] [zeroconf.service] service PC1._ssh._tcp.local. detected for [] (PC1.local.):22 with 1 records
+[06:38:51] [zeroconf.service] service PC1._device-info._tcp.local. detected for [] (PC1.local.):0 with 1 records
+[06:38:52] [sys.log] [inf] ipv6 fe80::735b:2531:c01d:957 detected for fe80::735b:2531:c01d:957 (30:c5:99:11:55:f0)
+[06:38:52] [sys.log] [inf] ipv6 fe80::e65a:d4ff:fe9a:4040 detected for fe80::e65a:d4ff:fe9a:4040 (e4:5a:d4:9a:40:40)
+[06:38:57] [sys.log] [inf] arp.spoof arp spoofer started, probing 1 targets.
+[06:38:57] [sys.log] [war] arp.spoof full duplex spoofing enabled, if the router has ARP spoofing mechanisms, the attack will fail.
+[06:39:27] [sys.log] [inf] arp.spoof waiting for ARP spoofer to stop ...
+[06:39:27] [sys.log] [inf] arp.spoof restoring ARP cache of 1 targets.
+[06:39:29] [sys.log] [inf] zerogod service discovery stopped
+4115 packets captured
+4116 packets received by filter
+0 packets dropped by kernel
